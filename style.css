@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background-color: rgb(73, 236, 236); */
+  background: linear-gradient(45deg, #025661, #196f7a, #70b7c0, #b2e8f0);
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  color: #fff;
+  background-color: #e60c2c;
+}
+
+main {
+  margin-top: 100px;
+  height: 90vh;
+}
+
+main h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 900;
+  color: #242424;
+}
+main .searchBox {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0px auto;
+}
+
+main .searchBox select {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+footer {
+  color: #fff;
+  background-color: #e60c2c;
+  padding: 15px;
+  text-align: center;
+}
